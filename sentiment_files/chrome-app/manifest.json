@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Sentiment Analysis GPT + LLAMA 2",
+  "version": "1.0",
+  "description": "...",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "sentiment.png",
+    "default_popup": "landing.html"
+  },
+  "icons": {
+    "48": "sentiment.png"
+  },
+    "web_accessible_resources": [
+    {
+      "resources": ["sentiment.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-3.7.0.min.js","content.js"]
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-// TODO! SOS Before I FINALLY UPLOAD THE CODE I HAVE TO REMOVE THE AMAZON.COM URL
 $(document).ready(function () {
     // Get the URL from the user's browser
     const currentURL = window.location.href;
